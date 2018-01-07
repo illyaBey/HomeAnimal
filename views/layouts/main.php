@@ -90,7 +90,7 @@ $categories = Categories::find()->orderBy(['created_at' => SORT_DESC])->all();
                                         <?php foreach($categories as $category): ?>
                                             <a class="dropdown-item" href="<?= Url::to(['/site/index', 'ArticlesSearch[category]' => $category->id]) ?>"><?= $category->title ?></a>
                                         <?php endforeach; ?>
-                                    </div>
+                                     </div>
                                 <?php else: ?>
                                     <div class="dropdown-menu" aria-labelledby="yummyDropdown">
                                         <a class="dropdown-item" href="#">Нема категорій</a>
