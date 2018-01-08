@@ -23,30 +23,39 @@ float: left;
 
 <div class="container">
     <div class="row" >
-	
+
 <figure>
-    <img class  = "slav" src="/web/about_us/Slavik11.jpg" alt="Славик"  width = "185" height = "250"> 
-	<a href="https://www.facebook.com/profile.php?id=100007279546465&pnref=eh">
+    <img class  = "slav" src="/web/about_us/Bei.jpg" alt="Ілля"  width = "300" height = "250">  
+	<a href="https://www.facebook.com/illya.bey.7">
 	<figcaption>
-       Лисаченко Вячеслав Александрович         
+    <img class  = "slav" src="/web/about_us/fc_logo.png" alt="Ілля"  width = "20" height = "20">
+       Бей Ілля Олегович         
+       </figcaption>
+	   <br>
+	         <img class  = "tim" src="/web/about_us/Kirill.jpg" alt="Кирило"  width = "300" height = "250"> 
+	  <a href="https://www.facebook.com/kiril.prahov">
+      <figcaption>
+    <img class  = "slav" src="/web/about_us/fc_logo.png" alt="Ілля"  width = "20" height = "20">
+        Прахов Кирило Олегович             
+       </figcaption>
+	   
+</figure> 
+<figure>
+      <img class  = "tim" src="/web/about_us/Jur.jpg" alt="Ілля"  width = "250" height = "250"> 
+	  <a href="https://vk.com/sportsmen1995">
+      <figcaption>
+    <img class  = "slav" src="/web/about_us/vk_logo.png" alt="Ілля"  width = "20" height = "20">
+        Журавель Ілля               
+       </figcaption>
+		<br>
+
+       <img class  = "kris" src="/web/about_us/Bolod.jpg" alt="Вова"  width = "200" height = "250" > 
+	  <a href="https://vk.com/id147221429">
+      <figcaption>
+    <img class  = "slav" src="/web/about_us/vk_logo.png" alt="Ілля"  width = "20" height = "20">
+        Нікітенко Володимир         
        </figcaption>
 </figure> 
 
-<figure>
-       <img class  = "kris" src="/web/about_us/Kristina.jpg" alt=" Кристина"  width = "185" height = "250" > 
-	   <a href="https://www.facebook.com/profile.php?id=100000926848979">
-      <figcaption>
-        Жемаева Кристина Сергеевна          
-       </figcaption>
-</figure> 
-
-<figure>
-      <img class  = "tim" src="/web/about_us/Artem11.jpg" alt=" Артем"  width = "185" height = "250"> 
-	  <a href="https://www.facebook.com/ArtieDreamer">
-      <figcaption>
-        Нестеров Артем Дмитриевич               
-       </figcaption>
-</figure> 
-    
 </div>	
 </html>
