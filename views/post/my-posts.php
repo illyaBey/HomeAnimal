@@ -32,7 +32,7 @@ $this->title = 'Статті';
                                         'alt' => 'image',
                                         'class' => 'img img-responsive',
                                         'style' => [
-                                            'height' => '100px',
+                                            'height' => '150px',
                                             'width' => 'auto'
                                         ]
                                     ]);
@@ -56,8 +56,10 @@ $this->title = 'Статті';
                                 'value' => 'created_at'
                             ],
                             [
+                                'header' => 'Функції',
                                 'class' => 'yii\grid\ActionColumn',
-                                'template' => '{update} {delete}'
+                                'template' => '{update} <br><br> {delete}'
+								
                             ],
                         ],
                     ]); ?>
