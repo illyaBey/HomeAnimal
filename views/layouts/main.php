@@ -47,7 +47,7 @@ $categories = Categories::find()->orderBy(['created_at' => SORT_DESC])->all();
                     <!-- Search Form -->
                     <div class="search-hidden-form">
                         <?php $form = ActiveForm::begin(['options' => ['data-pjax' => true ], 'method' => 'get', 'action' => ['/site/index']]); ?>
-                            <input type="search" name="ArticlesSearch[search]" id="search-anything" placeholder="Пошук статей...">
+                            <input type="search" name="ArticlesSearch[search]" id="search-anything" placeholder="Пошук по статтям...">
                             <input type="submit" value="" class="d-none">
                             <span class="searchBtn"><i class="fa fa-times" aria-hidden="true"></i></span>
                         <?php ActiveForm::end(); ?>
@@ -61,13 +61,14 @@ $categories = Categories::find()->orderBy(['created_at' => SORT_DESC])->all();
 <!-- ****** Top Header Area End ****** -->
 <?= Alert::widget() ?>
 <!-- ****** Header Area Start ****** -->
+
 <header class="header_area">
     <div class="container">
         <div class="row">
             <!-- Logo Area Start -->
             <div class="col-12">
                 <div class="logo_area text-center">
-                      <a class="yummy-logo" href="<?= Url::to(['/site/index']) ?>">Блог про гаджети</a>
+                      <a class="yummy-logo" href="<?= Url::to(['/site/index']) ?>">Блог про домашніх тварин</a>
                 </div>
             </div>
         </div>
@@ -78,6 +79,7 @@ $categories = Categories::find()->orderBy(['created_at' => SORT_DESC])->all();
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#yummyfood-nav" aria-controls="yummyfood-nav" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" aria-hidden="true"></i> Меню</button>
                    
  <!-- Menu Area Start -->
+ 
                     <div class="collapse navbar-collapse justify-content-center" id="yummyfood-nav">
                         <ul class="navbar-nav" id="yummy-nav">
                             <li class="nav-item">
@@ -90,7 +92,7 @@ $categories = Categories::find()->orderBy(['created_at' => SORT_DESC])->all();
                                         <?php foreach($categories as $category): ?>
                                             <a class="dropdown-item" href="<?= Url::to(['/site/index', 'ArticlesSearch[category]' => $category->id]) ?>"><?= $category->title ?></a>
                                         <?php endforeach; ?>
-                                     </div>
+                                    </div>
                                 <?php else: ?>
                                     <div class="dropdown-menu" aria-labelledby="yummyDropdown">
                                         <a class="dropdown-item" href="#">Нема категорій</a>
@@ -98,7 +100,7 @@ $categories = Categories::find()->orderBy(['created_at' => SORT_DESC])->all();
                                 <?php endif; ?>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= Url::to(['/site/about']) ?>">Про авторів</a>
+                                <a class="nav-link" href="<?= Url::to(['/site/about']) ?>">Автори</a>
                             </li>
                         
                         </ul>
@@ -108,10 +110,9 @@ $categories = Categories::find()->orderBy(['created_at' => SORT_DESC])->all();
         </div>
     </div>
 </header>
+
 <!-- ****** Header Area End ****** -->
-
 <?= $content ?>
-
 <!-- ****** Footer Menu Area Start ****** -->
 <footer class="footer_area">
     <div class="container">
