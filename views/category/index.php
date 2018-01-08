@@ -34,7 +34,7 @@ $this->title = 'Категории';
                                 'style' => [
                                     'height' => '100px',
                                     'width' => 'auto'
-                                ]
+                                ] 
                             ]);
                         }
                     ],
